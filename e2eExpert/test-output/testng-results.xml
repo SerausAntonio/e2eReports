@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19371" started-at="2019-01-24T22:29:08Z" finished-at="2019-01-24T22:29:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="19371" started-at="2019-01-24T22:29:08Z" finished-at="2019-01-24T22:29:27Z">
+      <class name="com.e2e.testcases.TC002">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC002@617faa95]" name="beforeMethod" is-config="true" duration-ms="5204" started-at="2019-01-24T23:29:15Z" finished-at="2019-01-24T23:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC002@617faa95]" name="f" duration-ms="3" started-at="2019-01-24T23:29:20Z" finished-at="2019-01-24T23:29:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC002@617faa95]" name="afterMethod" is-config="true" duration-ms="881" started-at="2019-01-24T23:29:20Z" finished-at="2019-01-24T23:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.e2e.testcases.TC002 -->
+      <class name="com.e2e.testcases.TC001">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.e2e.testcases.TC001@7e0b0338]" name="beforeSuite" is-config="true" duration-ms="19" started-at="2019-01-24T23:29:07Z" finished-at="2019-01-24T23:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC001@7e0b0338]" name="beforeMethod" is-config="true" duration-ms="5829" started-at="2019-01-24T23:29:08Z" finished-at="2019-01-24T23:29:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC001@7e0b0338]" name="f" duration-ms="389" started-at="2019-01-24T23:29:13Z" finished-at="2019-01-24T23:29:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC001@7e0b0338]" name="afterMethod" is-config="true" duration-ms="1069" started-at="2019-01-24T23:29:14Z" finished-at="2019-01-24T23:29:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.e2e.testcases.TC001@7e0b0338]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-01-24T23:29:27Z" finished-at="2019-01-24T23:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.e2e.testcases.TC001 -->
+      <class name="com.e2e.testcases.TC003">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC003@1e127982]" name="beforeMethod" is-config="true" duration-ms="5020" started-at="2019-01-24T23:29:21Z" finished-at="2019-01-24T23:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC003@1e127982]" name="f" duration-ms="2" started-at="2019-01-24T23:29:26Z" finished-at="2019-01-24T23:29:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC003@1e127982]" name="afterMethod" is-config="true" duration-ms="929" started-at="2019-01-24T23:29:26Z" finished-at="2019-01-24T23:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.e2e.testcases.TC003 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

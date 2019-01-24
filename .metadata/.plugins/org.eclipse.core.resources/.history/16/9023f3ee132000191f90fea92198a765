@@ -1,0 +1,5 @@
+#browser=chrome
+browser=firefox
+#browser=IE
+testsiteurl=https://nl-nl.facebook.com/
+wait=10

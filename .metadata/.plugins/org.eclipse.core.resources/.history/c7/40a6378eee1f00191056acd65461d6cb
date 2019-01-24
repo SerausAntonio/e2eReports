@@ -1,0 +1,36 @@
+package com.e2e.testcases;
+
+import java.io.File;
+import java.net.URL;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TC001 {
+	WebDriver driver;
+	
+  @Test
+  public void f() throws Exception {
+	  getClassLoader1();
+	  System.setProperty("webdriver.chrome.driver","D:\\e2e\\e2eExpert\\resources\\executables\\chromedriver.exe");
+	  driver = new ChromeDriver();
+	  driver.get("https://nl-nl.facebook.com/");
+	  driver.findElement(By.cssSelector("input[type=email][name='email']")).sendKeys("email");;
+      driver.findElement(By.cssSelector("input[type=password][name='pass']")).sendKeys("pass");
+      driver.findElement(By.xpath("//input[@value='Aanmelden']")).click();
+    		  
+      driver.quit();		  
+  }
+  public void getClassLoader1() throws Exception{
+	    
+      System.out.println("Classname: " + this.getClass().getSimpleName());
+	  System.out.println(findFile("chromedriver.exe"));
+  }
+  public String findFile (String fileName) throws Exception{
+      URL location = getClass().getResource(fileName);
+      return new File(location.toURI()).getAbsolutePath();
+
+  } 
+}

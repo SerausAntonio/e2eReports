@@ -1,0 +1,6 @@
+//properties file
+
+email=input[type=email][name='email']
+password=input[type=password][name='pass']
+aanmelden=input[@value='Aanmelden']
+    		  

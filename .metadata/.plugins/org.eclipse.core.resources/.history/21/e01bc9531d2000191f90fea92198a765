@@ -1,0 +1,69 @@
+package com.e2e.base;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+
+public class Testbase {
+  public WebDriver driver;
+  public FileInputStream fn;
+  public Properties config;
+  public Properties OR;
+  public static Logger log = Logger.getLogger("devpinoyLogger");
+  @BeforeMethod
+  public void beforeMethod() throws IOException {
+	  if (driver == null){
+		fn = new FileInputStream(System.getProperty("user.dir")+ "\\src\\test\\resources\\properties\\config.properties");
+	  	config = new Properties();
+	  	config.load(fn);
+	  	fn = new FileInputStream(System.getProperty("user.dir")+ "\\src\\test\\resources\\properties\\OR.properties");
+	  	OR = new Properties();
+	  	OR.load(fn);
+	  	
+	    log.debug("Config file uploaded");
+	  	if (config.getProperty("browser").equals("chrome")){
+	  		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+	  		driver = new ChromeDriver();
+	  	}else if (config.getProperty("browser").equals("IE")){
+	  		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
+	  		driver = new InternetExplorerDriver();
+	  	}else if (config.get("browser").equals("firefox")){
+	  		System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
+	  		driver = new FirefoxDriver();		
+	  	}
+	  }
+	  driver.get(config.getProperty("testsiteurl"));
+	  driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("wait")),TimeUnit.SECONDS);
+	
+	  log.debug("Starting test");
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  driver.quit();
+  }
+
+  @BeforeSuite
+  public void beforeSuite() {
+  }
+
+  @AfterSuite
+  public void afterSuite() {
+  }
+
+}
