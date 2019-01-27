@@ -1,5 +1,7 @@
 package com.e2e.testcases;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.e2e.base.Testbase;
@@ -10,5 +12,10 @@ public class TC002 extends Testbase {
   @Test
   public void f() {
 	  System.out.println(this.getClass().getName());
+      driver.findElement(By.cssSelector(OR.getProperty("email"))).sendKeys("email");; 
+      driver.findElement(By.cssSelector(OR.getProperty("password"))).sendKeys("pass");
+      //  driver.findElement(By.cssSelector(OR.getProperty("aanmelden"))).click();
+  
+	     Assert.assertTrue(false, "Test failed");
   }
 }

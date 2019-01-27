@@ -1,0 +1,16 @@
+package com.e2e.testcases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.e2e.base.Testbase;
+
+
+public class TC002 extends Testbase {
+
+  @Test
+  public void f() {
+	  System.out.println(this.getClass().getName());
+	  Assert.assertFalse(false, "Test failed");
+  }
+}

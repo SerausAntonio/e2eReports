@@ -19,14 +19,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 
 public class Testbase {
-  public WebDriver driver;
-  public FileInputStream fn;
-  public Properties config;
-  public Properties OR;
+  public static WebDriver driver;
+  public static FileInputStream fn;
+  public static Properties config;
+  public static Properties OR;
   public static Logger log = Logger.getLogger("devpinoyLogger");
+  
+  
   @BeforeMethod
   public void beforeMethod() throws IOException {
 	  if (driver == null){
@@ -52,13 +56,15 @@ public class Testbase {
 	  }
 	  driver.get(config.getProperty("testsiteurl"));
 	  driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("wait")),TimeUnit.SECONDS);
-	
+	  System.out.println("URL " + config.getProperty("testsiteurl"));
 	  log.debug("Navigated to: " + config.getProperty("testsiteurl"));
   }
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
+	  if (driver==null){
+	     driver.quit();
+	  }
 	  log.debug("Testexecution completed!!!");
   }
 
@@ -68,6 +74,7 @@ public class Testbase {
 
   @AfterSuite
   public void afterSuite() {
+	  
   }
   public Boolean isElementPresent(By by){
 	  try{

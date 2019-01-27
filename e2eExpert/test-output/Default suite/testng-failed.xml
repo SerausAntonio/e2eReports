@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.e2e.testcases.TC001">
+      <class name="com.e2e.testcases.TC002">
         <methods>
           <include name="beforeSuite"/>
-          <include name="afterMethod"/>
           <include name="afterSuite"/>
-          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
           <include name="f"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.e2e.testcases.TC001 -->
+      </class> <!-- com.e2e.testcases.TC002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
