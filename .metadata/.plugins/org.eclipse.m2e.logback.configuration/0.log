@@ -1187,3 +1187,7 @@
 2019-01-27 15:37:32,901 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\e2e\e2eExpert\src\main\resources
 2019-01-27 15:37:32,903 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-01-27 15:37:32,904 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-27 16:45:28,253 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-27 16:45:28,256 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\e2e\e2eExpert\src\main\resources
+2019-01-27 16:45:28,258 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-27 16:45:28,259 [Worker-113] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

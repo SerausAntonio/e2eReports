@@ -20,7 +20,7 @@ public class TC001 extends Testbase {
       driver.findElement(By.cssSelector(OR.getProperty("password"))).sendKeys("pass");
     //  driver.findElement(By.cssSelector(OR.getProperty("aanmelden"))).click();
       log.debug("Login succesfully executed");
-     
+      Thread.sleep(2000);
   }
    
 }
