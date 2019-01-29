@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="7" passed="2">
+<testng-results skipped="0" failed="1" ignored="8" total="11" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Test succeed!!!]]>
+    </line>
+    <line>
+      <![CDATA[Test Failed!!!]]>
+    </line>
+    <line>
+      <![CDATA[Test succeed!!!]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="11928" started-at="2019-01-27T14:37:34Z" finished-at="2019-01-27T14:37:46Z">
+  <suite name="Suite" duration-ms="1163" started-at="2019-01-27T23:04:39Z" finished-at="2019-01-27T23:04:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11928" started-at="2019-01-27T14:37:34Z" finished-at="2019-01-27T14:37:46Z">
+    <test name="Test" duration-ms="1163" started-at="2019-01-27T23:04:39Z" finished-at="2019-01-27T23:04:40Z">
       <class name="com.e2e.testcases.TC002">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC002@7e0b0338]" name="beforeMethod" is-config="true" duration-ms="1351" started-at="2019-01-27T15:37:43Z" finished-at="2019-01-27T15:37:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:com.e2e.testcases.TC002@7e0b0338]" name="f" duration-ms="269" started-at="2019-01-27T15:37:44Z" finished-at="2019-01-27T15:37:45Z">
+        <test-method status="FAIL" signature="f()[pri:0, instance:com.e2e.testcases.TC002@17d677df]" name="f" duration-ms="217" started-at="2019-01-28T00:04:39Z" finished-at="2019-01-28T00:04:39Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test failed expected [true] but found [false]]]>
@@ -51,48 +56,45 @@
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Test Failed!!!]]>
+            </line>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC002@7e0b0338]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-27T15:37:45Z" finished-at="2019-01-27T15:37:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- com.e2e.testcases.TC002 -->
       <class name="com.e2e.testcases.TC001">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.e2e.testcases.TC001@6e1ec318]" name="beforeSuite" is-config="true" duration-ms="13" started-at="2019-01-27T15:37:34Z" finished-at="2019-01-27T15:37:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC001@6e1ec318]" name="beforeMethod" is-config="true" duration-ms="6444" started-at="2019-01-27T15:37:34Z" finished-at="2019-01-27T15:37:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC001@76b0bfab]" name="beforeMethod" is-config="true" duration-ms="7908" started-at="2019-01-28T00:04:31Z" finished-at="2019-01-28T00:04:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC001@6e1ec318]" name="f" duration-ms="2305" started-at="2019-01-27T15:37:41Z" finished-at="2019-01-27T15:37:43Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.e2e.testcases.TC001@76b0bfab]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2019-01-28T00:04:39Z" finished-at="2019-01-28T00:04:39Z">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC001@76b0bfab]" name="f" duration-ms="268" started-at="2019-01-28T00:04:39Z" finished-at="2019-01-28T00:04:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test succeed!!!]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC001@6e1ec318]" name="afterMethod" is-config="true" duration-ms="3" started-at="2019-01-27T15:37:43Z" finished-at="2019-01-27T15:37:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC001@76b0bfab]" name="afterMethod" is-config="true" duration-ms="1077" started-at="2019-01-28T00:04:40Z" finished-at="2019-01-28T00:04:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.e2e.testcases.TC001@6e1ec318]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-01-27T15:37:46Z" finished-at="2019-01-27T15:37:46Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.e2e.testcases.TC001@76b0bfab]" name="afterSuite" is-config="true" duration-ms="1" started-at="2019-01-28T00:04:41Z" finished-at="2019-01-28T00:04:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.e2e.testcases.TC001 -->
       <class name="com.e2e.testcases.TC003">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.e2e.testcases.TC003@617faa95]" name="beforeMethod" is-config="true" duration-ms="1260" started-at="2019-01-27T15:37:45Z" finished-at="2019-01-27T15:37:46Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC003@3043fe0e]" name="f" duration-ms="223" started-at="2019-01-28T00:04:40Z" finished-at="2019-01-28T00:04:40Z">
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.e2e.testcases.TC003@617faa95]" name="f" duration-ms="256" started-at="2019-01-27T15:37:46Z" finished-at="2019-01-27T15:37:46Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Test succeed!!!]]>
+            </line>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.e2e.testcases.TC003@617faa95]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-01-27T15:37:46Z" finished-at="2019-01-27T15:37:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
       </class> <!-- com.e2e.testcases.TC003 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

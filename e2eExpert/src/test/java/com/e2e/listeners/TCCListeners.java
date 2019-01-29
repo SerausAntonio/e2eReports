@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.e2e.utilities.TestUtil;
 
@@ -33,7 +34,8 @@ public class TCCListeners implements  ITestListener{
 
 	public void onTestFailure(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		System.out.println("Test Failed");
+		System.setProperty("org.uncommons.reportng.escape-output","false");
+		Reporter.log("Test Failed!!!");
 		try {
 			TestUtil.captureScreenShot();
 		} catch (IOException e) {
@@ -54,9 +56,7 @@ public class TCCListeners implements  ITestListener{
 
 	public void onTestSuccess(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		
-		System.out.println("Test Succes");
-		
+		Reporter.log("Test succeed!!!");
 		
 	}
 

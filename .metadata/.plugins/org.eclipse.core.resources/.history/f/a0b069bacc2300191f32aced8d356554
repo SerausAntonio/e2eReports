@@ -1,0 +1,34 @@
+package com.e2e.testcases;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.e2e.base.Testbase;
+
+public class TC003 extends Testbase {
+
+  @Test (dataProvider="getData")
+  public void f() {
+	  
+	  System.out.println(this.getClass().getName());
+      driver.findElement(By.cssSelector(OR.getProperty("email"))).sendKeys("email");; 
+      driver.findElement(By.cssSelector(OR.getProperty("password"))).sendKeys("pass");
+      //  driver.findElement(By.cssSelector(OR.getProperty("aanmelden"))).click();
+  
+  }
+  
+  @DataProvider
+  public Object[][] getData(){
+	  int rows = excel.getRowCount("TC003");
+	  int cols = excel.getColumnCount("TC003");
+	  
+	  Object[][] data = new Object[rows-1][cols];
+	  
+	  for (int rowNum=2; rowNum<= rows; rowNum++){
+		  
+	  }
+	  return Object;
+  }
+  
+}

@@ -1,11 +1,8 @@
 package com.e2e.base;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 
-import java.io.File;
+
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -17,11 +14,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+
+import com.e2e.utilities.ExcelReader;
+
 
 public class Testbase {
   public static WebDriver driver;
@@ -29,9 +26,10 @@ public class Testbase {
   public static Properties config;
   public static Properties OR;
   public static Logger log = Logger.getLogger("devpinoyLogger");
+  public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+ "\\src\\test\\resources\\excel\\TestData.xlsx");
   
   
-  @BeforeMethod
+  @BeforeSuite
   public void beforeMethod() throws IOException {
 	  if (driver == null){
 		fn = new FileInputStream(System.getProperty("user.dir")+ "\\src\\test\\resources\\properties\\config.properties");
@@ -56,26 +54,18 @@ public class Testbase {
 	  }
 	  driver.get(config.getProperty("testsiteurl"));
 	  driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("wait")),TimeUnit.SECONDS);
-	  System.out.println("URL " + config.getProperty("testsiteurl"));
 	  log.debug("Navigated to: " + config.getProperty("testsiteurl"));
   }
 
-  @AfterMethod
+  @AfterSuite
   public void afterMethod() {
-	  if (driver==null){
+	  if (driver!=null){
 	     driver.quit();
 	  }
 	  log.debug("Testexecution completed!!!");
   }
 
-  @BeforeSuite
-  public void beforeSuite() {
-  }
-
-  @AfterSuite
-  public void afterSuite() {
-	  
-  }
+  
   public Boolean isElementPresent(By by){
 	  try{
 		  driver.findElement(by);

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 27 15:37:34 CET 2019</td>
+<td>Started on:</td><td>Mon Jan 28 00:04:39 CET 2019</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11928 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1163 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.e2e.testcases.TC002.f()'><b>f</b><br>Test class: com.e2e.testcases.TC002</td>
+<td title='com.e2e.testcases.TC002.f()'><b>f</b><br>Test class: com.e2e.testcases.TC002<br/>
+<a href="#Output-1222768327" onClick='toggleBox("Output-1222768327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1222768327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1222768327">
+Test Failed!!!<br/>
+</div>
+</td>
 <td><div><pre>java.lang.AssertionError: Test failed expected [true] but found [false]
 	at com.e2e.testcases.TC002.f(TC002.java:19)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2130192211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2130192211'><pre>java.lang.AssertionError: Test failed expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1222768327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1222768327'><pre>java.lang.AssertionError: Test failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:93)
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
@@ -111,7 +118,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.e2e.testcases.TC002@7e0b0338</td></tr>
+<td>com.e2e.testcases.TC002@17d677df</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -121,15 +128,29 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.e2e.testcases.TC001.f()'><b>f</b><br>Test class: com.e2e.testcases.TC001</td>
-<td></td>
-<td>2</td>
-<td>com.e2e.testcases.TC001@6e1ec318</td></tr>
-<tr>
-<td title='com.e2e.testcases.TC003.f()'><b>f</b><br>Test class: com.e2e.testcases.TC003</td>
+<td title='com.e2e.testcases.TC001.f()'><b>f</b><br>Test class: com.e2e.testcases.TC001<br/>
+<a href="#Output-1139814130" onClick='toggleBox("Output-1139814130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1139814130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1139814130">
+Test succeed!!!<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>com.e2e.testcases.TC003@617faa95</td></tr>
+<td>com.e2e.testcases.TC001@76b0bfab</td></tr>
+<tr>
+<td title='com.e2e.testcases.TC003.f()'><b>f</b><br>Test class: com.e2e.testcases.TC003<br/>
+<a href="#Output-201719260" onClick='toggleBox("Output-201719260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201719260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201719260">
+Test succeed!!!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.e2e.testcases.TC003@3043fe0e</td></tr>
 </table><p>
 </body>
 </html>
